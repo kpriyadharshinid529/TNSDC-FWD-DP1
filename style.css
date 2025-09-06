@@ -1,0 +1,187 @@
+/* General Styles */
+
+body {
+
+  margin: 0;
+
+  font-family: Arial, sans-serif;
+
+  background-color: #e0f7f9;
+
+  color: #03363d;
+
+}
+
+/* Navigation */
+
+header {
+
+  background-color: #40e0d0;
+
+  padding: 15px 0;
+
+  position: sticky;
+
+  top: 0;
+
+  z-index: 1000;
+
+}
+
+nav ul {
+
+  display: flex;
+
+  justify-content: center;
+
+  list-style: none;
+
+  padding: 0;
+
+  margin: 0;
+
+}
+
+nav ul li {
+
+  margin: 0 15px;
+
+}
+
+nav ul li a {
+
+  text-decoration: none;
+
+  color: white;
+
+  font-weight: bold;
+
+  transition: color 0.3s, border-bottom 0.3s;
+
+}
+
+nav ul li a:hover,
+
+nav ul li a.active {
+
+  color: #002f33;
+
+  border-bottom: 2px solid white;
+
+}
+
+/* Sections */
+
+section {
+
+  padding: 50px;
+
+  text-align: center;
+
+  opacity: 0;
+
+  transform: translateY(20px);
+
+  transition: all 0.6s ease-in-out;
+
+}
+
+section.show {
+
+  opacity: 1;
+
+  transform: translateY(0);
+
+}
+
+#profile img {
+
+  width: 150px;
+
+  height: 150px;
+
+  border-radius: 50%;
+
+  border: 5px solid #40e0d0;
+
+}
+
+#profile h1 {
+
+  margin: 15px 0 5px;
+
+  font-size: 28px;
+
+}
+
+#profile p {
+
+  font-size: 18px;
+
+  color: #006064;
+
+}
+
+/* Achievements List */
+
+#achievements ul {
+
+  list-style: none;
+
+  padding: 0;
+
+}
+
+#achievements li {
+
+  background: #b2f2f7;
+
+  margin: 10px auto;
+
+  padding: 12px;
+
+  border-radius: 10px;
+
+  width: 60%;
+
+  transition: transform 0.3s;
+
+}
+
+#achievements li:hover {
+
+  transform: scale(1.05);
+
+}
+
+/* Footer */
+
+footer {
+
+  background-color: #40e0d0;
+
+  text-align: center;
+
+  padding: 15px;
+
+  color: white;
+
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+  section {
+
+    padding: 30px 20px;
+
+  }
+
+  #achievements li {
+
+    width: 90%;
+
+  }
+
+}
